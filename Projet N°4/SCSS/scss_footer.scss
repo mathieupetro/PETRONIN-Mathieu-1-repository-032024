@@ -1,0 +1,75 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 22px 25px;
+  padding-bottom: 5px;
+  background: #353535;
+  box-sizing: border-box;
+  .desktop {
+    display: none;
+  }
+}
+
+.footer p {
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.logo_ohmyfood {
+  width: 137.58px;
+  height: 27px;
+  color: white;
+  font-family: Shrikhand;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.fa-utensils {
+  margin-right: 10px
+}
+
+.fa-handshake-angle {
+  margin-right: 10px
+}
+
+.invisible-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: default; /* Changer le curseur pour qu'il ne semble pas cliquable */
+}
+
+@media screen and (min-width: 1200px) {
+
+  .footer {
+    position: relative; /* Assure que les éléments positionnés à l'intérieur du footer sont positionnés par rapport à lui */
+    height: 114px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    justify-content: flex-end;
+    p {
+      margin: 0 10px;
+    }
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+  }
+
+  .footer h2.logo_ohmyfood {
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+
+  
+}
